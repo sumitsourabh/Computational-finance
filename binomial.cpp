@@ -147,10 +147,10 @@ double binomial::americanput(){
 
 
 int main()
-{   double call[200];
+{   double call[100];
 	int j=0;
-	double steps[200];
-	for(double n=1;n<150;n+=3){
+	double steps[100];
+	for(double n=1;n<100;n+=1){
 	steps[j]=n;
 	binomial b(99,100,0.06,0.2,n);
 	b.riskneutralprob();
